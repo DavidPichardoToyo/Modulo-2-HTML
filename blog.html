@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Blog de David</h1>
+    </header>
+    <div>
+        <p>Soy un parrafo dentro de un div</p>
+    </div>
+    <section>
+        <article class="post">
+            <h2>Título de mi post</h2>
+            <p>Descrición de mi post</p>
+            <img src="assets/img/rojo.jpg" width="400" alt="Balon Rojo"/>
+            <p>Texto del articulo que hay acá y es texto de prueba</p>
+        </article>
+        <article class="post">
+            <h2>Título de mi post 2</h2>
+            <p>Descrición de mi post 2</p>
+            <img src="assets/img/balon.jpg" width="400" alt="Balon"/>
+            <p>Texto del articulo que hay acá y es texto de prueba</p>
+        </article>
+        <article class="post">
+            <h2>Título de mi post 3</h2>
+            <p>Descrición de mi post 3</p>
+            <img src="assets/img/escudo barcelona.jpg" width="400" alt="escudo"/>
+            <p>Texto del articulo que hay acá y es texto de prueba</p>
+        </article>
+    </section>
+    <footer>
+        <a href="#titutlo">Ir al titulo</a>
+        <a href="mailto:davidpichardot31@gmail.com">Contactame aquí</a>
+        <p>Copyright 2025</p>
+    </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <title>Mi primera web</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 500px;">
+        <thead>
+            <tr>
+                <th>Precio</th>
+                <th>Producto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hola beats</td>
+                <td>Gratis</td>
+            </tr>
+            <tr>
+                <td>Chanchito feliz</td>
+                <td>19,20$</td>
+            </tr>
+            <tr>
+                <td>chanchito feliz muy feliz</td>
+                <td>29$</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total: 49,80$</td>
+        </tfoot>
+    </table>
+    <!--ul es lista no ordenada-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <!--ol es lita ordenada-->
+    <ol>
+        <li value="50">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-roman;">Sub elemento1</li>
+                <li style="list-style-type: lower-roman;">Sub elemento2</li>
+                <li style="list-style-type: lower-roman;">Sub elemento3</li>
+                <li style="list-style-type: lower-roman;">Sub elemento4</li>
+            </ol>
+        </li>
+    </ol>
+    <form action="formulario.php" method="post">
+        <label for="nombre">Nombre</label>
+        <input value="Chanchito" type="text" id="nombre" name="nombre" placeholder="Nombre">
+        <br>
+        <label for="apellido">Apellido</label>
+        <input value="feliz" type="text" id="apellido" name="apellido" placeholder="Apellido">
+        <br>
+        <label for="comentario">Comentario<br></label>
+        <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario" name="comentarios">Este es un valor por defecto</textarea>
+        <br>
+        <button type="button">Tipo botón</button>
+        <button type="reset">Tipo reset</button>
+        <button type="submit">Tipo submit</button>
+    </form>
+    <h1>Mi primer heading</h1>
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercer heading</h3>
+    <h4>Mi cuarto heading</h4>
+    <h5>Mi quinto heading</h5>
+    <h6>Mi sexto heading</h6>
+    <p>Chanchito feliz está muy feliz</p>
+    <p>Chanchito triste está muy triste</p>
+    <hr>
+    <h2>Chanchito Felipe</h2>
+    <p>Este tecto es <span style="color: blue">mucho más largo</span> y es para mostrar<br><br> la etiqueta span!</p>
+    <!--este texto es un comentario y no va a aparecer en el explorador-->
+    <a target="_blank" href="https://www.google.cl">Ir a google<br></a>
+    <img src="assets/img/rojo.jpg" width="400" alt="Balon rojo"/> 
+    
+</body>
+</html>
+
+<!--<section class="center">Hola mundo</section>
+    <div class="inline-block">inline block 1</div>
+    <div class="inline-block">inline block 2</div>
+    <div class="container">
+        <article class="column right">1</article>
+        <article class="column right">2</article>
+        <article class="column right">3</article>
+    </div>
+    <div class="container">
+        <img src="assets/img/balon.jpg" class="left" alt="balon">
+        <p>soy un parrafo a la derecha</p>
+    </div>
+    <div class="inline">lala</div>
+    <div class="inline">lele</div>
+    <span>span 1</span>
+    <span>span 2</span>
+    <article id="position">Soy prop de posición</article>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+        </tr>
+        <tr>
+            <td>David</td>
+            <td>Pichardo</td>
+        </tr>
+        <tr>
+            <td>Lionel</td>
+            <td>Messi</td>
+        </tr>
+        <tr>
+            <td>Leonardo</td>
+            <td>Pichardo</td>
+        </tr>
+    </table>
+    <ul>
+        <li>Uno sasjdal  lkaksdlash dlhas dashld as</li>
+        <li>Dos ñksjdñka ñjsdkñ jñaksjd </li>
+        <li>Tres añkjsd ñkjasd ñahwduo </li>
+    </ul>
+    <a href="https://www.google.com">Barcelona FC</a>
+    <p class="text">Esto es un texto</p>
+    <div class="margen">
+        Barcelona de margen
+    </div>
+    <article id="fondo">
+        Soy la propiedad de backgroud
+    </article>
+            <p class="texto">Texto parrafo de mi blog</p>
+        <p class="texto especial">Texto parrafo de mi blog</p>
+        <p class="especial">Texto parrafo de mi blog</p>
+        <div>
+            <p>Es hora de futbol</p>
+            <h2>Sección de mi página de blog</h2>
+            <h3>Otra sección de mi página</h3>
+        </div>-->
